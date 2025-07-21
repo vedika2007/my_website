@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicArticals</title>
+    <link rel="stylesheet" href="album.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-150">
+
+    <!-- Header -->
+
+     <header class="header">
+          <div class="flex items-center ">
+        <img src="logo.png" alt="Japan Logo" class=" w-20   shadow-md" />
+        <h1 class="text-2xl font-bold ">Music<span class="span2">Beat</span></h1>
+      </div>
+      <!-- search -->
+        <from class="form">
+            <div class="search">
+            <span class=" search icon material-symbols-outlined">search</span>
+            <input type="search" class="search-input" placeholder="search">
+            </div>
+        </from>
+    <div class="nav_toggle" id="navToggle">
+        <!-- top and bottom cha space -->
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <nav class="nav" id="navMenu">
+       <!-- external file sathi a tag use karatat -->
+        <a href="login.html">Login</a>
+        <a href="Index.html">All</a>
+        <a href="about.html">About</a>
+        <a href="podcast.html">Podcast</a>
+        <a href="contact.html">Contact Us</a>
+
+    </nav>     
+    </header> 
+ 
+    <h1 class="h11">My Music Albums</h1>
+
+  <!-- albums1 -->
+<div>
+    <div class="album" onclick="toggleSongs('songs1')">
+    <img src="arijit.jpeg" alt="Album1" class="img">
+    <div id="songs1" class="songs">
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="jawan.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="pathan.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="tainu.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="pal.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="aedil.mp4" type="audio/mpeg">
+        </audio>
+        
+    </div>
+   </div>
+
+   <!-- albums2 -->
+    <div class="album" onclick="toggleSongs('songs2')">
+    <img src="shreya.jpg" alt="Album2" class="img">
+    <div id="songs2" class="songs">
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="jawan.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="pathan.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        
+    </div>
+   </div>
+
+   <!-- albums3 -->
+    <div class="album" onclick="toggleSongs('songs3')">
+    <img src="sonu.jpg" alt="Album3" class="img">
+    <div id="songs3" class="songs">
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="jawan.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="pathan.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        
+    </div>
+    </div>
+
+    <!-- albums4 -->
+    <div class="album" onclick="toggleSongs('songs4')">
+    <img src="araman.jpg" alt="Album4" class="img">
+    <div id="songs4" class="songs">
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="jawan.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="pathan.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        
+    </div>
+    </div>
+    
+
+    <!-- albums5 -->
+    <div class="album" onclick="toggleSongs('songs5')">
+    <img src="alka'.webp" alt="Album5" class="img">
+    <div id="songs5" class="songs">
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="jawan.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="pathan.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        
+    </div>
+    </div>
+        <!-- albums6 -->
+    <div class="album" onclick="toggleSongs('songs6')">
+    <img src="falguni.jpg" alt="Album6" class="img">
+    <div id="songs6" class="songs">
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="jawan.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="pathan.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        
+    </div>
+    </div>
+
+
+    <!-- albums7 -->
+    <div class="album" onclick="toggleSongs('songs7')">
+    <img src="darshan.webp" alt="Album7" class="img">
+    <div id="songs7" class="songs">
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="jawan.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="pathan.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        
+    </div>
+    </div>
+
+    <!-- albums8 -->
+    <div class="album" onclick="toggleSongs('songs8')">
+    <img src="ajay-atul.jpg" alt="Album8" class="img">
+    <div id="songs8" class="songs">
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="jawan.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="pathan.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        
+    </div>
+    </div>
+
+    <!-- albums9 -->
+    <div class="album" onclick="toggleSongs('songs9')">
+    <img src="A R Raman.webp" alt="Album9" class="img">
+    <div id="songs9" class="songs">
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="jawan.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="pathan.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        
+    </div>
+    </div>
+
+    <!-- albums10 -->
+    <div class="album" onclick="toggleSongs('songs10')">
+    <img src="asha.jpg" alt="Album10" class="img">
+    <div id="songs10" class="songs">
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="jawan.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="pathan.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        <p>song1</p>
+        <audio controls>
+            <source src="mahi.mp4" type="audio/mpeg">
+        </audio>
+        
+    </div>
+    </div>
+
+    
+</div>
+
+
+
+
+<!-- Footer -->
+ <footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <b><h1 class="h1">*Music<span class="span4">Beat</span></h1></b>
+            <p>A MusicBeat is someone who composes, conducts, or performs music. According to the United States Employment Service, "MusicArticals" is a general term used to designate a person who follows music as a profession.</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <a href="login.html">Login</a><br>
+                <a href="Index.html">All</a>
+                <a href="about.html">About</a><br>
+                <a href="podcast.html">Podcast</a><br>
+                <a href="contact.html">Contact Us</a><br>
+              </ul>
+        </div>
+
+  
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: support@MusicBeat.com</p>
+            <p>Phone: +91 9860630483</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p class="p1">&copy; 2025 MusicBeat.All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script>
+    function toggleSongs(id){
+        const allSongDivs =document.querySelectorAll(".songs");
+        allSongDivs.forEach(div =>{
+            if(div.id===id){
+                div.style.display=div.style.display==="block"? "none":"block";
+            }else{
+                div.style.display="none";
+            }
+        });
+
+        const allAudio=document.querySelectorAll("audio");
+        allAudio.forEach(audio =>{
+            audio.pause();
+            audio.currentTime=0;
+        });
+    }
+</script>
+</body>
+</html>
+

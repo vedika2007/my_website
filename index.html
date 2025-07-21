@@ -1,0 +1,320 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicBeat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+</head>
+<body>
+    <header class="header">
+        <div class="flex items-center ">
+        <img src="logo.png" alt="Japan Logo" class=" w-20   shadow-md" />
+        <h1 class="text-2xl font-bold ">Music<span class="span1">Beat</span></h1>
+      </div>
+      <!-- search -->
+        <from class="form">
+            <div class="search">
+            <span class=" search icon material-symbols-outlined">search</span>
+            <input type="search" class="search-input" placeholder="search">
+            </div>
+        </from>
+    <div class="nav_toggle" id="navToggle">
+        <!-- top and bottom cha space -->
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <nav class="nav" id="navMenu">
+       <!-- external file sathi a tag use karatat -->
+        <a href="login.html">Login</a>
+        <a href="Index.html">All</a>
+        <a href="about.html">About</a>
+        <a href="album.html">Albums</a>
+        <a href="contact.html">Contact Us</a>
+
+    </nav>
+    </header> 
+
+        
+    <button id="navToggleBtn" class="nav-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+    </button>
+
+    
+    <nav class="nav" id="navMenu">
+       <!-- external file sathi a tag use karatat -->
+        <a href="login.html">Login</a>
+        <a href="index.html">All</a>
+        <a href="about.html">About</a>
+        <a href="album.html">Albums</a>
+        <a href="podcast.html">Podcast</a>
+        <a href="contact.html">Contact Us</a>
+
+    </nav>
+   
+    </header> 
+
+      
+        <h1 class="h1">Welcome to My<span class="span1"> MusicBeat</span></h1> 
+        
+        <div class="mood-buttons">
+            <button class="button" onclick="filterSongs('all')">All</button>
+            <button class="button" onclick="filterSongs('sad')">Sad</button>
+            <button class="button" onclick="filterSongs('feelgood')">Feel Good</button>
+            <button class="button" onclick="filterSongs('sleep')">Sleep</button>
+            <button class="button" onclick="filterSongs('relax')">Relax</button>
+        </div>
+
+      
+        
+     <!-- Music card -->
+        
+         
+        
+             
+            <div class="music-cards" id="musicCard">
+               
+                
+                 <div class="music-card" data-mood="feelgood">
+                    <img src="jawan.jpeg" alt="m1" >
+                    <p>Jawan</p>
+                    <audio controls>
+                        <source src="jawan.mp4" type="audio/mp4">
+                    </audio>
+                </div>
+    
+                <div class="music-card" data-mood="feelgood">
+                    <img src="namumkin.jpg" alt="m1">
+                    <p>namumkin</p>
+                    <audio controls >
+                        <source src="namumkin.mp4" type="audio/mp4">
+                    </audio>
+                </div>
+            
+    
+                <div class="music-card" data-mood="feelgood">
+                    <img src="mann.jpg" alt="m1" >
+                    <p>Mann-Jogiya</p>
+                    <audio controls>
+                        <source src="mann-jogiya.mp4" type="audio/mp4">
+                    </audio>
+                </div>
+                
+            
+               
+                <div class="music-card" data-mood="sleep">
+                    <img src="deva1.jpeg" alt="m1" >
+                    <p>Deva</p>
+                    <audio controls>
+                        <source src="deva.mp4" type="audio/mp4">
+                    </audio>
+                </div>
+            
+             
+                <div class="music-card" data-mood="sleep">
+                    <img src="om.jpeg" alt="m1">
+                    <p>Om-Sganti-Om</p>
+                    <audio controls>
+                        <source src="om-shanti.mp4" type="audio/mp4">
+                    </audio>
+                </div>
+                
+                
+            
+                <div class="music-card" data-mood="feelgood">
+                    <img src="mahi.jpg" alt="m1" >
+                    <p>O Mahi</p>
+                    <audio controls>
+                        <source src="mahi.mp4" type="audio/mp4">
+                    </audio>
+                </div>
+                
+            </div>
+    
+    
+     
+        
+            <div class="music-cards" id="musicCard">
+               
+                <div class="music-card" data-mood="relax">
+                    <img src="paniyon.jpg" alt="m1" >
+                    <p>Music</p>
+                    <audio controls>
+                        <source src="v3.mp3" type="audio/mp4">
+                    </audio>
+                </div>          
+            
+                
+                <div class="music-card" data-mood="relax">
+                    <img src="koi.jpg" alt="m1">
+                    <p>Music</p>
+                    <audio controls>
+                        <source src="koi.mp4" type="audio/mp4">
+                    </audio>
+                </div>
+        
+                
+                <div class="music-card" data-mood="sleep">
+                    <img src="deva.jpeg" alt="m1">
+                    <p>Music</p>
+                    <audio controls>
+                        <source src="v2.mp3" type="audio/mp4">
+                    </audio>
+                </div>
+               
+      
+        
+                <div class="music-card" data-mood="feelgood">
+                    <img src="apana bana le.jpg" alt="m1">
+                    <p>Music</p>
+                    <audio controls>
+                        <source src="v1.mp3" type="audio/mp4">
+                    </audio>
+                </div>
+                
+                
+                <div class="music-card"  data-mood="relax">
+                    <img src="animal.jpeg" alt="m1">
+                    <p>Music</p>
+                    <audio controls>
+                        <source src="ravavir.mp4" type="audio/mp4">
+                    </audio>
+                </div>
+            
+                
+                <div class="music-card" data-mood="relax">
+                    <img src="kamariya.jpg" alt="m1" >
+                    <p>Music</p>
+                    <audio controls>
+                        <source src="kamariya.mp4" type="audio/mp4">
+                    </audio>
+                </div>
+            </div>  
+            
+
+        
+             
+            <div class="music-cards" id="musicCard">
+                <div class="music-card" data-mood="relax">
+                    <img src="pathan.jpeg" alt="m1" >
+                    <p>Music</p>
+                    <audio controls>
+                        <source src="pathan.mp4" type="audio/mp4">
+                    </audio>
+                </div>
+
+                
+            
+             
+                
+                <div class="music-card" data-mood="sad">
+                    <img src="kesari.jpeg" alt="m1" >
+                    <p>Music</p>
+                    <audio controls >
+                        <source src="kesari.mp4" type="audio/mp4">
+                    </audio>
+                </div>
+            
+    
+                
+               
+                <div class="music-card" data-mood="sad">
+                    <img src="kala.jpeg" alt="m1">
+                    <p>Music</p>
+                    <audio controls>
+                        <source src="kala.mp4" type="audio/mp4">
+                    </audio>
+                </div>
+               
+                <div class="music-card"  data-mood="feelgood">
+                    <img src="jhumka.jpeg" alt="m1">
+                    <p>Music</p>
+                    <audio controls>
+                        <source src="jhumka.mp4" type="audio/mp4">
+                    </audio>
+                </div>
+            
+             
+                
+                <div class="music-card" data-mood="relax">
+                    <img src="galti.jpeg" alt="m1" >
+                    <p>Music</p>
+                    <audio controls>
+                        <source src="galti.mp4" type="audio/mp4">
+                    </audio>
+                </div>
+            
+                
+                <div class="music-card" data-mood="feelgood">
+                    <img src="channa.jpeg" alt="m1" >
+                    <p>Music</p>
+                    <audio controls>
+                        <source src="channa.mp4" type="audio/mp4">
+                    </audio>
+                </div>
+            </div>
+   
+ 
+        
+  
+    <footer>
+        <div class="footer-container">
+        <div class="footer-logo">
+            <b><h1 class="h2">Music<span class="span2">Beat</span></h1></b>
+            <p>A MusicBeat is someone who composes, conducts, or performs music. According to the United States Employment Service, "MusicArticals" is a general term used to designate a person who follows music as a profession.</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <a href="login.html">Login</a><br>                
+                <a href="about.html">About</a><br>
+                <a href="album.html">Albums</a><br>
+                <a href="podcast.html">Podcast</a><br>
+                <a href="contact.html">Contact Us</a><br>
+            </ul>
+        </div>
+         <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: support@MusicBeat.com</p>
+            <p>Phone: +91 9860630483</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p class="p2">&copy; 2025 MusicBeat. All Rights Reserved.</p>
+    </div>
+</footer> 
+
+
+
+<script>
+    function filterSongs(mood){
+        const cards = document.querySelectorAll('.music-card');
+        cards.forEach(card => {
+            const songMood= card.getAttribute('data-mood');
+            card.style.display = (mood === 'all'|| mood === songMood) ? 'block':'none';
+            
+        });
+    }
+
+  const navToggle = document.getElementById('navToggleBtn');
+  const navMenu = document.getElementById('navMenu');
+
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+
+</script>
+</body>
+</html>

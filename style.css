@@ -8,68 +8,66 @@ body {
 }
 
 .header {
-  background: #1e1e2f;
+  /* background: #1e1e2f;
   color: white;
     display: flex;
   align-items: center;
    justify-content: space-between;
   padding: 1rem;
   position: relative;
+*/
+background: #1e1e2f;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.header h1{
+.header, h1{
     color: #fff;
     font-size: 1.5rem;
     
 
 }
-.header .span1{
+.header ,.span3{
     color: orange;
     font-size: 1.5rem;
     
 }
-/* search bar */
 
-.form{
-  margin-left: 100px;
-}
-.search{
-    width: max-content;
-    display: flex;
-    align-items: center;
-    padding: 6px;
-    margin-left: 18px;
-    border-radius: 28px;
-    background-color: #f6f6f6;
-    transition: box-shadow 0.25s;
-    
-
-}
-.search,span{
-  color: #333333;
-}
-.search:focus-within{
-   box-shadow :(0, 0 ,2px rgba(0,0,0,0.5));
-   }
-
-.search-input{
-  font-size: 20px;
-  font-family: 'Lexend','sans-serif';
-  color: #333333;
-  margin-left: 14px;
-  outline: none;
-  border:none ;
-  background: transparent;
-  width: 400px;  
-
+/* Navigation */
+.nav {
+  display: flex;
+  gap: 1rem;
+  margin-top: 10px;
+  flex-wrap: wrap;
 }
 
-.search-input::placeholder,
-.search-icon {
-  color: rgba(0,0,0,0.25);
-
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  font-size: 1rem;
 }
 
+.nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: orange;
+  transition: width 0.3s;
+}
 
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* Hamburger Toggle */
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -80,42 +78,7 @@ body {
 .nav-toggle div {
   width: 25px;
   height: 3px;
-  background-color: white;
-}
-
-.nav {
-  display: flex;
-  gap: 1rem;
-}
-
-.nav,a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  position: relative;
-  transition: all 0.3s ease-in-out;
-}
-/* After navigation sathi use karatat */
-.nav a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -2px;
-  left: 0;
-  background-color:orange;
-  transition: width 0.3s;
-}
-
-.nav a:hover::after {
-  width: 100%;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  padding: 1rem;
+  background: white;
 }
 
 
@@ -133,6 +96,7 @@ body {
   transition: all 0.2s ease-in-out; 
   animation: fadeIn 1.3s ease-in-out; 
   padding-top: 20px;
+  color: black;
 
 }
 
@@ -270,6 +234,8 @@ footer {
 .footer-contact h3 {
     margin-bottom: 10px;
     font-size: 18px;
+    font-weight: bold;
+    color: white;
 }
 
 .footer-links,ul {
@@ -300,13 +266,19 @@ footer {
 
 }
 
-.footer-bottom {
+/* .footer-bottom {
     text-align: center;
     border-top: 1px solid #333;
     padding-top: 15px;
     margin-top: 20px;
     font-size: 13px;
     color: #aaa;
+} */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+  font-size: 13px;
 }
 
 
@@ -325,6 +297,54 @@ footer {
 
 /* Responsive styling */
 
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
 
+  .nav.active {
+    display: flex;
+  }
 
+  .nav-toggle {
+    display: flex;
+  }
+
+  .header {
+    align-items: flex-start;
+  }
+    
+    
+    
+    
+    .header h1{
+        font-size: 1.5rem;
+    }
   
+    .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo,
+  .footer-links,
+  .footer-contact {
+    margin-bottom: 1rem;
+  }
+  .music-card {
+    width: 45%; /* two per row on tablets */
+  }
+
+  .button {
+    font-size: 12px;
+    padding: 10px 16.5px;
+  }
+  
+  .h1 {
+    font-size: 1.5rem;
+  }
+}
+

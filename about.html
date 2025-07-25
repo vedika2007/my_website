@@ -5,13 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Us - MusicBeat</title>
   <link rel="stylesheet" href="about.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
   <header class="header">
-    <div class="logo-container">
-      <img src="logo.png" alt="Logo" class="logo" />
-      <h1 class="site-title">Music<span class="highlight">Beat</span></h1>
-    </div>
+    <div class="flex items-center ">
+        <img src="logo.png" alt="Japan Logo" class=" w-20   shadow-md" />
+        <h1 class="text-2xl font-bold ">Music<span class="span3" >Beat</span></h1>
+      </div>
 
     <div class="nav-toggle" id="navToggle">
       <div></div><div></div><div></div>
@@ -72,32 +74,30 @@
   </main>
 
   <footer>
-    <div class="footer-container">
-      <div class="footer-logo">
-        <h1 class="h2">Music<span class="span2">Beat</span></h1>
-        <p>A MusicBeat is someone who composes, conducts, or performs music. "MusicArticals" is a term for people who follow music professionally.</p>
-      </div>
-      <div class="footer-links">
-        <h3>Quick Links</h3>
-        <ul class="ul">
-          <li><a href="index.html">All</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="album.html">Albums</a></li>
-          <li><a href="podcast.html">Podcast</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="footer-contact">
-        <h3>Contact Us</h3>
-        <p>Email: support@MusicBeat.com</p>
-        <p>Phone: +91 9860630483</p>
-      </div>
+        <div class="footer-container">
+        <div class="footer-logo">
+            <b><h1 class="h2">Music<span class="span2">Beat</span></h1></b>
+            <p>A MusicBeat is someone who composes, conducts, or performs music. According to the United States Employment Service, "MusicArticals" is a general term used to designate a person who follows music as a profession.</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul class="ul">
+                <a href="Index.html">All</a><br>
+                <a href="album.html">Albums</a><br>
+                <a href="podcast.html">Podcast</a><br>
+                <a href="contact.html">Contact Us</a><br>
+            </ul>
+        </div>
+         <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: support@MusicBeat.com</p>
+            <p>Phone: +91 9860630483</p>
+        </div>
     </div>
     <div class="footer-bottom">
-      <p class="p2">&copy; 2025 MusicBeat. All Rights Reserved.</p>
+        <p class="p2">&copy; 2025 MusicBeat. All Rights Reserved.</p>
     </div>
-  </footer>
-
+</footer> 
   <script>
     const toggle = document.getElementById("navToggle");
     const menu = document.getElementById("navMenu");
@@ -107,5 +107,3 @@
   </script>
 </body>
 </html>
-
-    

@@ -12,33 +12,22 @@
 </head>
 <body>
      <header class="header">
-        <div class="flex items-center ">
+    <div class="flex items-center ">
         <img src="logo.png" alt="Japan Logo" class=" w-20   shadow-md" />
-        <h1 class="text-2xl font-bold ">Music<span class="span1">Beat</span></h1>
+        <h1 class="text-2xl font-bold ">Music<span class="span3" >Beat</span></h1>
       </div>
-      <!-- search -->
-        <from class="form">
-            <div class="search">
-            <span class=" search icon material-symbols-outlined">search</span>
-            <input type="search" class="search-input" placeholder="search">
-            </div>
-        </from>
-    <div class="nav_toggle" id="navToggle">
-        <!-- top and bottom cha space -->
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <nav class="nav" id="navMenu">
-       <!-- external file sathi a tag use karatat -->
-        <a href="login.html">Login</a>
-        <a href="Index.html">All</a>
-        <a href="about.html">About</a>
-        <a href="album.html">Albums</a>
-        <a href="contact.html">Contact Us</a>
 
+    <div class="nav-toggle" id="navToggle">
+      <div></div><div></div><div></div>
+    </div>
+
+    <nav class="nav" id="navMenu">
+      <a href="index.html">All</a>
+      <a href="about.html">About</a>
+      <a href="album.html">Albums</a>     
+      <a href="contact.html">Contact Us</a>
     </nav>
-    </header> 
+  </header> 
 
     <!-- main  -->
      <main class="main">
@@ -48,7 +37,7 @@
         <div class="main-cards">
             <div class="main-card bg-gray-200">
                 <p>Morning Mindset Christian Daily Devotional Bible study and prayer.<br>Morning Mindset Christian Daily Devotional Bible study and </p>
-                    <br><img src="study.jpg"><br>
+                    <br><img src="study.jpg" ><br>
                     <audio controls>
                         <source src="study.mp3">
                     </audio>
@@ -59,7 +48,7 @@
             <div class="main-card bg-gray-300">
                 <p>    Jay King and Jam Packard fill in the listeners on the end of Anything is Poddable.
 Hosted on Acast. See acast.com/privacy for more information.</p>
-                    <br><img src="poddable.jpg"><br>
+                    <br><img src="poddable.jpg" ><br>
                     <audio controls >
                         <source src="poddable.mp3">
                     </audio>
@@ -68,7 +57,7 @@ Hosted on Acast. See acast.com/privacy for more information.</p>
             
             <div class="main-card bg-red-100">
                 <p> Learning to play a musical instrument is hard. <br>So is trying to run a marathon, writing a term paper, and caring for a sick child.</p>
-                    <br><img src="brain.jpg"><br>
+                    <br><img src="brain.jpg" ><br>
                     <audio controls>
                         <source src="brain.mp3">
                     </audio>
@@ -80,7 +69,7 @@ Hosted on Acast. See acast.com/privacy for more information.</p>
             <div class="main-card bg-blue-100">
                 <p> Powerful Motivational Speech<br>
 Fuel your motivation with today’s inspirational episode! Packed with empowering-words, motivational-speeches, and uplifting-messages, it’s a roadmap to self-improvement </p>
-                    <img src="motivational.jpg"><br>
+                    <img src="motivational.jpg" ><br>
                     <audio controls>
                         <source src="motivational.mp3">
                     </audio>
@@ -247,33 +236,36 @@ In this episode of the All About Nothing podcast, Barrett Gruber and Zac King we
     
     
     <footer>
-    <div class="footer-container">
+        <div class="footer-container">
         <div class="footer-logo">
             <b><h1 class="h2">Music<span class="span2">Beat</span></h1></b>
             <p>A MusicBeat is someone who composes, conducts, or performs music. According to the United States Employment Service, "MusicArticals" is a general term used to designate a person who follows music as a profession.</p>
         </div>
         <div class="footer-links">
             <h3>Quick Links</h3>
-            <ul>
-                <a href="login.html">Login</a><br>
+            <ul class="ul">
                 <a href="Index.html">All</a><br>
                 <a href="about.html">About</a><br>
                 <a href="album.html">Albums</a><br>
                 <a href="contact.html">Contact Us</a><br>
             </ul>
         </div>
-
-  
-        <div class="footer-contact">
+         <div class="footer-contact">
             <h3>Contact Us</h3>
             <p>Email: support@MusicBeat.com</p>
             <p>Phone: +91 9860630483</p>
         </div>
     </div>
     <div class="footer-bottom">
-        <p class="p1">&copy; 2025 MusicBeat. All Rights Reserved.</p>
+        <p class="p2">&copy; 2025 MusicBeat. All Rights Reserved.</p>
     </div>
 </footer>
-
+<script>
+    const toggle = document.getElementById("navToggle");
+    const menu = document.getElementById("navMenu");
+    toggle.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
+  </script>
 </body>
 </html>

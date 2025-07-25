@@ -1,7 +1,3 @@
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,56 +13,24 @@
 </head>
 <body>
     <header class="header">
-        <div class="flex items-center ">
+    <div class="flex items-center ">
         <img src="logo.png" alt="Japan Logo" class=" w-20   shadow-md" />
-        <h1 class="text-2xl font-bold ">Music<span class="span1">Beat</span></h1>
+        <h1 class="text-2xl font-bold ">Music<span class="span3" >Beat</span></h1>
       </div>
-      <!-- search -->
-        <from class="form">
-            <div class="search">
-            <span class=" search icon material-symbols-outlined">search</span>
-            <input type="search" class="search-input" placeholder="search">
-            </div>
-        </from>
-    <div class="nav_toggle" id="navToggle">
-        <!-- top and bottom cha space -->
-        <div></div>
-        <div></div>
-        <div></div>
+
+    <div class="nav-toggle" id="navToggle">
+      <div></div><div></div><div></div>
     </div>
+
     <nav class="nav" id="navMenu">
-       <!-- external file sathi a tag use karatat -->
-        <a href="login.html">Login</a>
-        <a href="Index.html">All</a>
-        <a href="about.html">About</a>
-        <a href="album.html">Albums</a>
-        <a href="contact.html">Contact Us</a>
-
-    </nav>
-    </header> 
-
-        
-    <button id="navToggleBtn" class="nav-toggle">
-        <div></div>
-        <div></div>
-        <div></div>
-    </button>
-
-    
-    <nav class="nav" id="navMenu">
-       <!-- external file sathi a tag use karatat -->
-        <a href="login.html">Login</a>
-        <a href="index.html">All</a>
-        <a href="about.html">About</a>
-        <a href="album.html">Albums</a>
-        <a href="podcast.html">Podcast</a>
-        <a href="contact.html">Contact Us</a>
-
-    </nav>
-   
-    </header> 
-
       
+      <a href="about.html">About Us</a>
+      <a href="album.html">Albums</a>
+      <a href="podcast.html">Podcast</a>
+      <a href="contact.html">Contact Us</a>
+      
+    </nav>
+  </header>
         <h1 class="h1">Welcome to My<span class="span1"> MusicBeat</span></h1> 
         
         <div class="mood-buttons">
@@ -278,7 +242,7 @@
         <div class="footer-links">
             <h3>Quick Links</h3>
             <ul>
-                <a href="login.html">Login</a><br>                
+                <!-- <a href="login.html">Login</a><br>                 -->
                 <a href="about.html">About</a><br>
                 <a href="album.html">Albums</a><br>
                 <a href="podcast.html">Podcast</a><br>
@@ -308,13 +272,15 @@
         });
     }
 
-  const navToggle = document.getElementById('navToggleBtn');
-  const navMenu = document.getElementById('navMenu');
+  
 
-  navToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-  });
+  const toggle = document.getElementById("navToggle");
+    const menu = document.getElementById("navMenu");
+    toggle.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
 
 </script>
 </body>
 </html>
+
